@@ -1,0 +1,14 @@
+D:\vsProjects\PseudoOrk\PseudoOrk\bin\Debug\netcoreapp3.1\PseudoOrk.exe
+D:\vsProjects\PseudoOrk\PseudoOrk\bin\Debug\netcoreapp3.1\PseudoOrk.deps.json
+D:\vsProjects\PseudoOrk\PseudoOrk\bin\Debug\netcoreapp3.1\PseudoOrk.runtimeconfig.json
+D:\vsProjects\PseudoOrk\PseudoOrk\bin\Debug\netcoreapp3.1\PseudoOrk.runtimeconfig.dev.json
+D:\vsProjects\PseudoOrk\PseudoOrk\bin\Debug\netcoreapp3.1\PseudoOrk.dll
+D:\vsProjects\PseudoOrk\PseudoOrk\bin\Debug\netcoreapp3.1\PseudoOrk.pdb
+D:\vsProjects\PseudoOrk\PseudoOrk\obj\Debug\netcoreapp3.1\PseudoOrk.csproj.CoreCompileInputs.cache
+D:\vsProjects\PseudoOrk\PseudoOrk\obj\Debug\netcoreapp3.1\PseudoOrk.AssemblyInfoInputs.cache
+D:\vsProjects\PseudoOrk\PseudoOrk\obj\Debug\netcoreapp3.1\PseudoOrk.AssemblyInfo.cs
+D:\vsProjects\PseudoOrk\PseudoOrk\obj\Debug\netcoreapp3.1\PseudoOrk.dll
+D:\vsProjects\PseudoOrk\PseudoOrk\obj\Debug\netcoreapp3.1\PseudoOrk.pdb
+D:\vsProjects\PseudoOrk\PseudoOrk\obj\Debug\netcoreapp3.1\PseudoOrk.genruntimeconfig.cache
+D:\vsProjects\PseudoOrk\PseudoOrk\obj\Debug\netcoreapp3.1\PseudoOrk.csproj.AssemblyReference.cache
+D:\vsProjects\PseudoOrk\PseudoOrk\obj\Debug\netcoreapp3.1\PseudoOrk.GeneratedMSBuildEditorConfig.editorconfig
