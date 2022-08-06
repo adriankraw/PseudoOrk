@@ -18,8 +18,18 @@ namespace PseudoOrk.Commands
         {
             try
             {
-                fileSystem.EnterPath(Type.GetType("PseudoOrk.Commands." + input, true, true));
-                Console.WriteLine("<"+ fileSystem.GetPath() + "> :");
+                string app = input.Split(' ')[0];
+                string parameters = input.Replace(app, "").TrimStart();
+                switch (app)
+                {
+                    case "cd":
+                        fileSystem.EnterPath(Type.GetType("PseudoOrk.Commands." + parameters, true, true));
+                        break;
+                    case "dir":
+                        Console.WriteLine(fileSystem.ShowFolders());
+                        break;
+                }
+                //Console.WriteLine("<"+ fileSystem.GetPath() + "> :");
             }
             catch (Exception e)
             {

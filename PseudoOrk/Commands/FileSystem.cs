@@ -4,44 +4,44 @@ using System.Text;
 
 namespace PseudoOrk.Commands
 {
-    abstract class PathNode
+    public abstract class PathNode
     {
         public bool use;
         public string path;
         public List<PathNode> children;
         public PathNode parent;
     }
-    class GameNode : PathNode
+    class Game : PathNode
     {
-        public GameNode()
+        public Game()
         {
             use = false;
             path = "Game";
             children = new List<PathNode>();
-            children.Add(new CharacterNode() 
+            children.Add(new Character() 
             {
                 parent = this
             });
             parent = null;
         }
     }
-    class CharacterNode : PathNode
+    class Character : PathNode
     {
-        public CharacterNode()
+        public Character()
         {
             use = false;
             path = "Char";
             children = new List<PathNode>();
-            children.Add(new StatsNode()
+            children.Add(new Stats()
             {
                 parent = this
             });
             parent = null;
         }
     }
-    class StatsNode : PathNode 
+    class Stats : PathNode 
     {
-        public StatsNode()
+        public Stats()
         {
             use = false;
             path = "Stats";
@@ -57,7 +57,7 @@ namespace PseudoOrk.Commands
         Stack<PathNode> stack;
         public FileSystem()
         {
-            currentNode = new GameNode();
+            currentNode = new Game();
         }
         public string GetPath()
         {
@@ -93,22 +93,11 @@ namespace PseudoOrk.Commands
         }
         public void EnterPath(System.Type node)
         {
-            int i;
-            for (i = 0; i < currentNode.children.Count; i++)
-            {
-                if (currentNode.children[i].GetType() == node)
-                {
-                    break;
-                }
-            }
-            if (i == currentNode.children.Count - 1 && currentNode.children[currentNode.children.Count - 1].GetType() != node)
-            {
-                return;
-            }
-            else 
-            {
-                currentNode = currentNode.children[i];
-            }
+            Cd.Run(currentNode, node);
+        }
+        public string ShowFolders()
+        {
+            return Dir.Run(currentNode);
         }
     }
 }
